@@ -1,72 +1,3 @@
-# Week 14 challenge
-
-You are dealing with an archaic navigation system that sends you around the city by making you follow 4 cardinal directions: North, East, South, West.
-You soon realise that this system sends you for a loop by making you needlesly travel up and then down, first left and then right etc.
-
-Write a function `cutToTheChase` which accepts an array of directions, cancels out the immediate opposing directions and then returns only the ones you should follow.
-
-*Note:* You should cancel out immediatelly following opposing directions, like North-South-West is just West. But North-West-South is still North-West-South;
-
-
-Examples:
-```
-cutToTheChase(['NORTH']) // returns ['NORTH']
-cutToTheChase(['NORTH', 'EAST']) // returns ['NORTH', 'EAST']
-cutToTheChase(['NORTH', 'EAST', 'SOUTH']) // returns ['NORTH', 'EAST', 'SOUTH']
-cutToTheChase(['NORTH', 'SOUTH', 'EAST', 'WEST', 'NORTH', 'WEST']) // returns ['NORTH', 'WEST']
-cutToTheChase(['SOUTH', 'NORTH', 'EAST', 'WEST']) // returns []
-```
-
-
-## Upload link
-
-You can `/submit` your solution in Slack.
-
-## Results
-
-| Place | Name         | Performance | Codegolf | Vote  | Total points |
-|-------|--------------|-------------|----------|-------|--------------|
-| 1.    | Aman         | 25          |          | 5     | 30           |
-| 2.    | Joseph       | 15          | 5        | 5     | 25           |
-| 3.    | Hossein      | 18          |          |       | 18           |
-| 4.    | Tom Atterton | 12          |          |       | 12           |
-| 5.    | Arpad        | 10          |          |       | 10           |
-| 6.    | Lee          | 8           |          |       | 8            |
-| 7.    | Tim          | 6           |          |       | 6            |
-|       | Daan         | 6           |          |       | 6            |
-| 9.    | Lars         | 2           |          |       | 2            |
-| 10.   | Medhat       | 1           |          |       | 1            |
-
-
-### Screenshot
-
-![2022 Week 14 podium](./podium.png)
-
-![2022 Week 14 results](./results.png)
-
-### Vote
-
-```
-╔════════════════╤═══════════╤══════════════════════════════╗
-║ Name           │ Vote      │ Comment                      ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ harijs.deksnis │ aman101   │ Really smart solution        ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ hossein        │ joseph103 │ Awesome codegolf             ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ varun          │ joseph103 │ Crazy short 😅               ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ aman.tuladhar  │ joseph103 │ Nice one                     ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ tomatterton    │ aman101   │ I like the use of charCodeAt ║
-╟────────────────┼───────────┼──────────────────────────────╢
-║ arpad          │ aman101   │ my head hurts but wow        ║
-╚════════════════╧═══════════╧══════════════════════════════╝
-```
-
-
-### Full output log
-```
 
 EVALUATION STARTED:                 13/04/2022, 12:06:57
 EVALUATING CHALLENGE:               2022/w14
@@ -150,5 +81,3 @@ RAW RESULTS:
 │   21    │     'tim103.js'     │ 38.047320000012405 │ 38.00482400000328  │ 0.042496000009123236 │ 106  │ 'successfully' │ 128.91864599999826 │    false     │ false  │    null    │ 11300 │
 │   22    │   'hossein102.js'   │ 58.681367000041064 │ 58.634851999988314 │ 0.04651500005275011  │ 136  │ 'successfully' │ 148.78823399999965 │    false     │ false  │    null    │ 11300 │
 └─────────┴─────────────────────┴────────────────────┴────────────────────┴──────────────────────┴──────┴────────────────┴────────────────────┴──────────────┴────────┴────────────┴───────┘
-```
-  
